@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+
+    <title>{{ header_text }}</title>
+
+    <link rel="stylesheet" href="/static/css/style.css" />
+  </head>
+
+  <body class="theme-{{ scene }}">
+    <img class="bg" src="/static/gifs/{{ scene }}.gif" alt="" />
+    <div class="bg-overlay" aria-hidden="true"></div>
+
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="title">{{ header_text }}</div>
+        <div class="meta">
+          <span class="tag">pod</span>
+          <span class="value">{{ maquina }}</span>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
